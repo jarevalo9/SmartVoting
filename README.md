@@ -7,4 +7,4 @@ A decentralized election system built with Smart Contracts!
 
 ## How to Run? 
 * You can run the test by running the command on your bash terminal 
-npm test
+<br>'npm test'</br>
