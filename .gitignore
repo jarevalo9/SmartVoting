@@ -2,6 +2,7 @@
 clarity-counter/
 clarity-hello-world/
 todos/
+test/
 
 #Files
 cli_keychain.json
