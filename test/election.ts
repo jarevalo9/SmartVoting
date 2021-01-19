@@ -1,5 +1,7 @@
 import { Client, Provider, ProviderRegistry, Result } from "@blockstack/clarity";
-import { assert } from "chai";
+import { assert, expect } from "chai";
+import { add-candidate } from "././contracts/election.clar";
+
 describe("voting contract test suite", () => {
   let electionClient: Client;
   let provider: Provider;
@@ -11,3 +13,9 @@ describe("voting contract test suite", () => {
     await electionClient.checkContract();
   });
 })
+
+describe("testing adding voters", () =>{
+    it("it should add the candidate 1 ", () => {
+        expect(add-candidate("candidate1").true)
+    });
+});
